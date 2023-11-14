@@ -24,15 +24,16 @@ Anaconda - Python 3.7
 Developed by: UDHAYA SANKARAN M
 Register number: 212222110051
 '''
+fname=input('enter the file name:')
 num_words=0
-with open('text.txt','r') as f1:         
-    for i in f1:
-        word=i.split()
-        num_words+=len(word)
-print("Number of words in a file = {}".format(num_words))
+with open(fname,'r') as f:
+  for line in f:
+    words=line.split()
+    num_words+=len(words)
+print("Number of  words: ",num_words)
 ```
 ### OUTPUT:
-![image](https://github.com/Udhayasankaran04/Word-count/assets/119393933/b65df536-2ba6-49cf-886a-7553db219e40)
+![image](https://github.com/Udhayasankaran04/Word-count/assets/119393933/933484a1-664b-479e-a83b-cc297973172e)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
